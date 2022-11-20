@@ -17,10 +17,7 @@ jobs:
         npm run-script build
   
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: gh-pages
-        BRANCH: main
-        FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build
+      type: git
+      repo: https://claire-chow:Yiwen2019@Zhou@github.com/claire-chow/claire-chow.github.io.git  
+      branch: main
+      message:  now('YYYY-MM-DD HH:mm:ss')
