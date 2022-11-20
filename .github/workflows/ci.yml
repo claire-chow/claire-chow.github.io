@@ -15,10 +15,7 @@ jobs:
       run: |
         npm install
         npm run-script build
-        git config --global user.name 'claire-chow'
-        git config --global user.email '158733929@qq.com'
-        git config --global user.password 'Yiwen2019@Zhou'
-
+  
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
